@@ -1,6 +1,7 @@
 // pages/signup.js
 
 import React from "react";
+import Form from "../components/Form";
 
 const SignUp = () => {
   return (
@@ -13,6 +14,7 @@ const SignUp = () => {
       }}
     >
       <h1>Sign Up</h1>
+      <Form />
     </div>
   );
 };
