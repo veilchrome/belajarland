@@ -4,6 +4,7 @@ import React, { useState } from "react";
 const Form = () => {
   const [formData, setFormData] = useState({
     username: "",
+    password: ""
   });
 
   const handleChange = (e) => {
@@ -15,7 +16,7 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
+
     console.log("Form submitted with data:", formData);
   };
 
@@ -31,6 +32,14 @@ const Form = () => {
           value={formData.username}
           onChange={handleChange}
         />
+        <label htmlFor="password">Password</label>
+        <input
+        type="text"
+        id="password"
+        name="password"
+        value={formData.password}
+        onChange={handleChange} />
+
         <br />
         <button type="submit">Submit</button>
       </form>

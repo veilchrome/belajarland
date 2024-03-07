@@ -11,6 +11,7 @@ import AnnualReport from "./pages/annual";
 import Teams from "./pages/team";
 import Blogs from "./pages/blogs";
 import SignUp from "./pages/signup";
+import animeJS from "./anime";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/annual" element={<AnnualReport />} />
         <Route path="/team" element={<Teams />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/anime" element={<animeJS/>} />
         <Route path="/sign-up" element={<SignUp />} />
       </Routes>
     </Router>
